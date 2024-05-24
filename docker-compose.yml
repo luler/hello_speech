@@ -1,0 +1,13 @@
+version: "2"
+
+services:
+  flask:
+    #    build:
+    #      context: .
+    #      dockerfile: Dockerfile
+    #    image: flask
+    image: registry.cn-shenzhen.aliyuncs.com/luler/hello_speech
+    ports:
+      - 5000:5000
+    volumes:
+      - ./:/root/work
